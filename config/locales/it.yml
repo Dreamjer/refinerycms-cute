@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      cutes:
+        title: Cutes
+    cutes:
+      admin:
+        cutes:
+          actions:
+            create_new: Aggiungi Nuovo Cute
+            reorder: Riordina Cutes
+            reorder_done: Termina il Riordino di Cutes
+          records:
+            title: Cutes
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Cutes. Clicca "Aggiungi Nuovo Cute" per aggiungere il tuo primo cute.
+          cute:
+            view_live_html: Guarda live questo cute <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo cute
+            delete: Rimuovi per sempre questo cute
+      cutes:
+        show:
+          other: Altri Cutes
+  activerecord:
+    attributes:
+      'refinery/cutes/cute':
+        name: Name
+        project: Project
+        description: Description

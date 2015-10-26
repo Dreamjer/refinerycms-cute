@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="cutes">
+    <% @cutes.each do |cute| %>
+      <li>
+        <%= link_to cute.name, refinery.cutes_cute_path(cute) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

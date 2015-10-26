@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      cutes:
+        title: Cutes
+    cutes:
+      admin:
+        cutes:
+          actions:
+            create_new: Nieuwe Cute toevoegen
+            reorder: De volgorde van de Cutes wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Cute-volgorde
+          records:
+            title: Cutes
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Cutes. Druk op 'Nieuwe Cute toevoegen' om de eerste toe te voegen.
+          cute:
+            view_live_html: Deze cute op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze cute
+            delete: Deze cute definitief verwijderen
+      cutes:
+        show:
+          other: Andere Cutes
+  activerecord:
+    attributes:
+      'refinery/cutes/cute':
+        name: Name
+        project: Project
+        description: Description

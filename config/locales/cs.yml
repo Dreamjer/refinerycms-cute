@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      cutes:
+        title: Cutes
+    cutes:
+      admin:
+        cutes:
+          actions:
+            create_new: Přidat Cute
+            reorder: Řadit Cutes
+            reorder_done: Konec řazení Cutes
+          records:
+            title: Cutes
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Cutes. Zvolte "Přidat Cute" pro přidání prvního cute.
+          cute:
+            view_live_html: Zobrazit náhled cute<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit cute
+            delete: Smazat cute
+      cutes:
+        show:
+          other: Další Cutes
+  activerecord:
+    attributes:
+      'refinery/cutes/cute':
+        name: Name
+        project: Project
+        description: Description

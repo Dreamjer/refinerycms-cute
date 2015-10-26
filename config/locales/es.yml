@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      cutes:
+        title: Cutes
+#        article: masculino/femenino
+    cutes:
+      admin:
+        cutes:
+          actions:
+            create_new: Crear nuevo cute
+            reorder: Reordenar cutes
+            reorder_done: Reordenación de cutes completada
+          records:
+            title: Cutes
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay cutes todavía. Pulsa en "Crear nuevo Cute" para crear tu primer cute.
+          cute:
+            view_live_html: Ver este cute como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este cute
+            delete: Borrar este cute para siempre
+      cutes:
+        show:
+          other: Otros cutes
+  activerecord:
+    attributes:
+      'refinery/cutes/cute':
+        name: Name
+        project: Project
+        description: Description

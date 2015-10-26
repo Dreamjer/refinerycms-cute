@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      cutes:
+        title: Cutes
+    cutes:
+      admin:
+        cutes:
+          actions:
+            create_new: 建立新的 Cute
+            reorder: 对 Cutes 重新排序
+            reorder_done: 对 Cutes 的重新排序结束
+          records:
+            title: Cutes
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Cutes yet. Click "Add New Cute" to add your first cute.
+            no_items_yet: 目前没有 Cutes . 点击 "Add New Cute" 创建一个cute.
+          cute:
+            view_live_html: 查看 cute 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 cute
+            delete: 永久删除 cute
+      cutes:
+        show:
+          other: 其他 Cutes
+  activerecord:
+    attributes:
+      'refinery/cutes/cute':
+        name: Name
+        project: Project
+        description: Description

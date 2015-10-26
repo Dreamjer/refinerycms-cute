@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @cute.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @cute.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Project</h1>
+    <p>
+      <%=raw @cute.project %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @cute.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="cutes">
+      <% @cutes.each do |cute| %>
+        <li>
+          <%= link_to cute.name, refinery.cutes_cute_path(cute) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

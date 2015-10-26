@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      cutes:
+        title: Cutes
+    cutes:
+      admin:
+        cutes:
+          actions:
+            create_new: Lag en ny Cute
+            reorder: Endre rekkefølgen på Cutes
+            reorder_done: Ferdig å endre rekkefølgen Cutes
+          records:
+            title: Cutes
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Cutes enda. Klikk på "Lag en ny Cute" for å legge til din første cute.
+          cute:
+            view_live_html: Vis hvordan denne cute ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne cute
+            delete: Fjern denne cute permanent
+      cutes:
+        show:
+          other: Andre Cutes
+  activerecord:
+    attributes:
+      'refinery/cutes/cute':
+        name: Name
+        project: Project
+        description: Description

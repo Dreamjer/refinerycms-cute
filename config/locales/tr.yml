@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      cutes:
+        title: Cutes
+    cutes:
+      admin:
+        cutes:
+          actions:
+            create_new: Yeni Ekle Cute
+            reorder: Tekrar sirala Cutes
+            reorder_done: Tekrar siralama tamamlandiCutes
+          records:
+            title: Cutes
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Cutes yok henuz.  Tikla "Yeni Ekle Cute" eklemek senin ilk cute.
+          cute:
+            view_live_html: Bunu canlu cute goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle cute
+            delete: Bunu Sil cute sonsuza dek
+      cutes:
+        show:
+          other: Diger Cutes
+  activerecord:
+    attributes:
+      'refinery/cutes/cute':
+        name: Name
+        project: Project
+        description: Description
